@@ -1,1 +1,2 @@
-# MONARCAJAM
+# MONARCA-GAMEJAM
+ Horror GameJam

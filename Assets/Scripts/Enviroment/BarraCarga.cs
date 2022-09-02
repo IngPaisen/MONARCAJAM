@@ -44,7 +44,7 @@ public class BarraCarga : MonoBehaviour
         switch (caso)
         {
             case 0:
-                //tarea 1
+                //tarea 0
                 gameManager.tarea0 = true;
                 primeraVez = true;
                 interactuado.VoltearValor();
@@ -52,7 +52,7 @@ public class BarraCarga : MonoBehaviour
                 break;
 
             case 1:
-                //tarea 2
+                //tarea 1
                 gameManager.tarea1 = true;
                 primeraVez = true;
                 interactuado.VoltearValor();
@@ -61,7 +61,8 @@ public class BarraCarga : MonoBehaviour
                 break;
 
             case 2:
-                if(gameManager.tarea2==true)
+                //tarea 2
+                if (gameManager.tarea2==true)
                 {
                     gameManager.tarea2P5 = true;
                 }

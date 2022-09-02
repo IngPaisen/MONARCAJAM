@@ -13,7 +13,7 @@ public class Interact : MonoBehaviour
     [SerializeField] Image backGround;
     [SerializeField] Image fill;
     public int caso;
-
+    //public Image basura;
     private void Start()
     {
         text = GameObject.Find("TextInteractuar").GetComponent<TextMeshProUGUI>();
@@ -21,6 +21,7 @@ public class Interact : MonoBehaviour
         //barra = GameObject.Find("BarraCarga").GetComponent<BarraCarga>();
         //barraI1 = GameObject.Find("BarraCarga").GetComponent<Image>();
         //barraI2 = GameObject.Find("BarraCarga").GetComponent<Image>();
+        //if (basura == null) { return; }
 
     }
     private void Awake()

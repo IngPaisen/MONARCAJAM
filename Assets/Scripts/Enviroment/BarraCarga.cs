@@ -13,6 +13,7 @@ public class BarraCarga : MonoBehaviour
     bool primeraVez;
     [SerializeField]Interact interactuado;
 
+
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -38,28 +39,43 @@ public class BarraCarga : MonoBehaviour
     }
      
     
-    public bool RegresarValor()
+    public void RegresarValor()
     {
         switch (caso)
         {
             case 0:
+                //tarea 1
+                gameManager.tarea0 = true;
+                primeraVez = true;
+                interactuado.VoltearValor();
+                //return true;
+                break;
+
+            case 1:
+                //tarea 2
                 gameManager.tarea1 = true;
                 primeraVez = true;
                 interactuado.VoltearValor();
-                return true;
 
+                //return true;
+                break;
 
-            case 1:
+            case 2:
+                if(gameManager.tarea2==true)
+                {
+                    gameManager.tarea2P5 = true;
+                }
                 gameManager.tarea2 = true;
                 primeraVez = true;
                 interactuado.VoltearValor();
-
-                return true;
-
-
+                gameManager.ActivarBasura();
+                Debug.Log("Basura");
+                
+                //return true;
+                break;
         }
 
-        return false;
+        //return false;
     }
 
 }

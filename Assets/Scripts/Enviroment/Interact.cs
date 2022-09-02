@@ -36,15 +36,17 @@ public class Interact : MonoBehaviour
             backGround.enabled = false;
             fill.enabled = false;
             player.speed = 10;
+            text.enabled = false;
+            Destroy(gameObject);
 
         }
 
 
 
     }
-
+    
     private void OnTriggerStay(Collider other)
-    {
+    {   
         if (other.transform.CompareTag("Player")&&!interactuado)
         {
             text.enabled = true;

@@ -29,7 +29,7 @@ public class BarraCarga : MonoBehaviour
         Debug.Log("ejecutando");
         if (actual < max)
         {
-            actual += adicion;
+            actual += adicion*Time.deltaTime;
             fill.fillAmount = actual / max;
         }
         else

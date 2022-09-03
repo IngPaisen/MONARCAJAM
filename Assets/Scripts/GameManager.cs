@@ -14,4 +14,6 @@ public class GameManager : MonoBehaviour
     {
         basura.enabled = !basura.enabled;
     }
+
+
 }
